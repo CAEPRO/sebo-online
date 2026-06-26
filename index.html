@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📚 Sebo Online - Livros Usados</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span>📚</span> Sebo Online
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO / BANNER -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Livros usados com <span class="highlight">história</span></h1>
+                <p>Encontre tesouros literários com preços incríveis. Todos os livros são revisados e estão em ótimo estado.</p>
+                <div class="hero-tags">
+                    <span>#Engenharia</span>
+                    <span>#Economia</span>
+                    <span>#Sustentabilidade</span>
+                    <span>#Cultura</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK GRID -->
+    <section class="book-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📖 Acervo disponível</h2>
+                <span class="results-count">Mostrando <span id="bookCount">0</span> livros</span>
+            </div>
+
+            <div class="book-grid" id="bookGrid">
+                <!-- Livros serão inseridos via JavaScript -->
+            </div>
+
+            <!-- Paginação Simples -->
+            <div class="pagination" id="pagination">
+                <button class="page-btn" id="prevPage" disabled>‹ Anterior</button>
+                <span class="page-info" id="pageInfo">Página 1</span>
+                <button class="page-btn" id="nextPage">Próxima ›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 Sebo Online · Desenvolvido por Diego Bezerra Reinaldo</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

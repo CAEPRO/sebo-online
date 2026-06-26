@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📖 Detalhes do Livro - Sebo Online</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span>📚</span> Sebo Online
+            </a>
+            <div class="header-actions">
+                <a href="index.html" class="back-link">← Voltar ao acervo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- DETALHE DO LIVRO -->
+    <section class="book-detail-section">
+        <div class="container">
+            <div class="book-detail-wrapper">
+                <!-- Galeria de Imagens -->
+                <div class="book-gallery">
+                    <div class="main-image">
+                        <img id="bookMainImage" src="https://via.placeholder.com/500x600/61005D/FFFFFF?text=Capa" alt="Capa do livro" />
+                        <div class="book-badge" id="bookBadge"></div>
+                    </div>
+                    <div class="thumbnails" id="thumbnails">
+                        <!-- Miniaturas serão inseridas via JS -->
+                    </div>
+                </div>
+
+                <!-- Informações -->
+                <div class="book-info">
+                    <div class="book-breadcrumb">
+                        <a href="index.html">Início</a>
+                        <span>›</span>
+                        <span id="bookCategory">Categoria</span>
+                        <span>›</span>
+                        <span id="bookTitleBreadcrumb">Título</span>
+                    </div>
+
+                    <h1 id="bookDetailTitle">Título do Livro</h1>
+
+                    <div class="book-meta">
+                        <span class="book-author" id="bookAuthor">Autor desconhecido</span>
+                        <span class="book-year" id="bookYear">Ano</span>
+                        <span class="book-condition" id="bookCondition">Usado - Bom estado</span>
+                    </div>
+
+                    <div class="book-price-wrapper">
+                        <span class="book-price" id="bookPrice">R$ 0,00</span>
+                        <span class="book-price-original" id="bookOriginalPrice">R$ 0,00</span>
+                        <span class="book-discount" id="bookDiscount">-0%</span>
+                    </div>
+
+                    <div class="book-description">
+                        <h3>📝 Descrição</h3>
+                        <p id="bookDescription">Carregando descrição...</p>
+                    </div>
+
+                    <div class="book-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">📏 Tamanho</span>
+                            <span class="spec-value" id="bookSize">N/A</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">📄 Páginas</span>
+                            <span class="spec-value" id="bookPages">N/A</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">🏷️ Marca/Editora</span>
+                            <span class="spec-value" id="bookPublisher">N/A</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">📦 Condição</span>
+                            <span class="spec-value" id="bookConditionDetail">Usado</span>
+                        </div>
+                    </div>
+
+                    <!-- Botão WhatsApp -->
+                    <a href="#" id="whatsappButton" class="btn-whatsapp" target="_blank">
+                        <span>💬</span> Comprar via WhatsApp
+                    </a>
+                    
+                    <div class="security-tips">
+                        <p>🔒 <strong>Compra segura:</strong> Todas as transações são feitas via WhatsApp com acompanhamento do vendedor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVROS RELACIONADOS -->
+    <section class="related-books">
+        <div class="container">
+            <h2>📚 Você também pode gostar</h2>
+            <div class="book-grid" id="relatedBooks">
+                <!-- Livros relacionados serão inseridos via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 Sebo Online · Desenvolvido por Diego Bezerra Reinaldo</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
