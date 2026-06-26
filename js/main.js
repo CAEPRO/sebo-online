@@ -1,8 +1,9 @@
 // ============================================
 // BANCO DE DADOS DE LIVROS
 // ============================================
-const books = [{
-    id: '1',
+const books = [
+    {
+    id: 1,
     title: 'Empreendedorismo na Prática - Mitos e Verdades do Empreendedor de Sucesso',
     author: 'José Dornelas',
     category: 'Empreendedorismo',
@@ -20,9 +21,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-1.jpg']
-},
+  },
 {
-    id: '2',
+    id: 2,
     title: 'O Pequeno Livro Azul da Programação da Produção',
     author: 'Mike Liddell',
     category: 'Planejamento e Controle da Produção (PCP)',
@@ -40,9 +41,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-2.jpg']
-},
+  },
 {
-    id: '3',
+    id: 3,
     title: 'Projeto e Desenvolvimento de Produtos',
     author: 'Antonio Nunes Barbosa Filho',
     category: 'Desenvolvimento de Produtos',
@@ -60,9 +61,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-3.jpg']
-},
+  },
 {
-    id: '4',
+    id: 4,
     title: 'Plano de negócios com o modelo canvas: guia prático de avaliação de ideias de negócio a partir de exemplos',
     author: 'José Dornelas et al.',
     category: 'Empreendedorismo',
@@ -80,9 +81,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-4.jpg']
-},
+  },
 {
-    id: '5',
+    id: 5,
     title: 'Usando o MS Project 2007 em Gerenciamento de Projetos',
     author: 'Darci Prado',
     category: 'Gerenciamento de Projetos',
@@ -100,9 +101,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-5.jpg']
-},
+  },
 {
-    id: '6',
+    id: 6,
     title: 'Muito Além da Vantagem Competitiva',
     author: 'Todd Zenger',
     category: 'Negócios e Gestão',
@@ -120,9 +121,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-6.jpg']
-},
+  },
 {
-    id: '7',
+    id: 7,
     title: 'Criando Organizações Eficazes: Estruturas Em Cinco Configurações',
     author: 'Henry Mintzberg',
     category: 'Negócios e Gestão',
@@ -140,9 +141,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-7.jpg']
-},
+  },
 {
-    id: '8',
+    id: 8,
     title: 'TQC. Controle da Qualidade Total no Estilo Japonês',
     author: 'Vicente Falconi Campos',
     category: 'Gestão da Qualidade',
@@ -160,9 +161,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-8.jpg']
-},
+  },
 {
-    id: '9',
+    id: 9,
     title: 'Administração De Produção E De Operações: Manufatura E Serviços - Ed. Compacta: Manufatura e Serviços: uma Abordagem Estratégica',
     author: 'Henrique L. Corrêa; Carlos A. Corrêa',
     category: 'Gestão da Produção',
@@ -180,9 +181,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-9.jpg']
-},
+  },
 {
-    id: '10',
+    id: 10,
     title: 'Usando O Arena Em Simulação',
     author: 'Darci Prado',
     category: 'Simulação',
@@ -200,9 +201,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-10.jpg']
-},
+  },
 {
-    id: '11',
+    id: 11,
     title: 'Resíduos sólidos: problema ou oportunidade?',
     author: 'Daniel Véras Ribeiro; Márcio Raymundo Morelli',
     category: 'Engenharia Ambiental',
@@ -220,9 +221,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-11.jpg']
-},
+  },
 {
-    id: '12',
+    id: 12,
     title: 'Logística reversa e sustentabilidade',
     author: 'André Luiz Pereira et at.',
     category: 'Logística',
@@ -240,9 +241,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-12.jpg']
-},
+  },
 {
-    id: '13',
+    id: 13,
     title: 'Introdução à Engenharia Ambiental: O Desafio do Desenvolvimento Sustentável',
     author: 'Benedito Braga et at.',
     category: 'Engenharia Ambiental',
@@ -260,9 +261,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-13.jpg']
-},
+  },
 {
-    id: '14',
+    id: 14,
     title: 'Empreendedorismo: Vocação, Capacitação E Atuação Direcionadas Para O Plano De Negócios',
     author: 'Djalma de Pinho Rebouças de Oliveira',
     category: 'Empreendedorismo',
@@ -280,9 +281,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-14.jpg']
-},
+  },
 {
-    id: '15',
+    id: 15,
     title: 'Pesquisa Operacional: Técnicas De Otimização Aplicadas A Sistemas Agroindustriais',
     author: 'José Vicente Caixeta-Filho',
     category: 'Pesquisa Operacional',
@@ -300,9 +301,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-15.jpg']
-},
+  },
 {
-    id: '16',
+    id: 16,
     title: 'Pesquisa operacional para os cursos de administração e engenharia: Programação linear e simulação',
     author: 'Ermes Medeiros da Silva et al.',
     category: 'Pesquisa Operacional',
@@ -320,9 +321,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-16.jpg']
-},
+  },
 {
-    id: '17',
+    id: 17,
     title: 'Cálculo Numérico',
     author: 'Reinaldo Burlan; Antonio Carlos De Lima; Annibal Hetem Junior',
     category: 'Cálculo Numérico',
@@ -340,9 +341,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-17.jpg']
-},
+  },
 {
-    id: '18',
+    id: 18,
     title: 'The Official Guide to the TOEFL Test With CD-ROM, 4th Edition',
     author: 'Educational Testing Service',
     category: 'Inglês / TOEFL',
@@ -360,9 +361,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-18.jpg']
-},
+  },
 {
-    id: '19',
+    id: 19,
     title: 'Gestão de Operações. A Engenharia de Produção a Serviço da Modernização da Empresa',
     author: 'José Celso Contador',
     category: 'Gestão da Produção',
@@ -380,9 +381,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-19.jpg']
-},
+  },
 {
-    id: '20',
+    id: 20,
     title: 'Organização, o Planejamento e o Controle da Manutenção',
     author: 'Gil Branco Filho',
     category: 'Manutenção',
@@ -400,9 +401,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-20.jpg']
-},
+  },
 {
-    id: '21',
+    id: 21,
     title: 'Ergonomia: Projeto e Produção',
     author: 'Itiro Iida',
     category: 'Ergonomia',
@@ -420,9 +421,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-21.jpg']
-},
+  },
 {
-    id: '22',
+    id: 22,
     title: 'Official TOEFL iBT® Tests Volume 1, 2nd Edition: Vol. 1',
     author: 'Educational Testing Service',
     category: 'Inglês / TOEFL',
@@ -440,9 +441,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-22.jpg']
-},
+  },
 {
-    id: '23',
+    id: 23,
     title: 'Otimização Combinatória e Programação Linear',
     author: 'Marco Cesar Goldbarg; Henrique Pacca L. Luna',
     category: 'Pesquisa Operacional',
@@ -460,9 +461,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-23.jpg']
-},
+  },
 {
-    id: '24',
+    id: 24,
     title: 'Manufatura Enxuta Como Estratégia De Produção: A Chave Para A Produtividade Industrial',
     author: 'Dalvio Ferrari Tubino',
     category: 'Manufatura Enxuta (Lean)',
@@ -480,9 +481,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-24.jpg']
-},
+  },
 {
-    id: '25',
+    id: 25,
     title: 'METHODS OF MULTIVARIATE ANALYSIS',
     author: 'Alvin C. Rencher',
     category: 'Estatística',
@@ -500,9 +501,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-25.jpg']
-},
+  },
 {
-    id: '26',
+    id: 26,
     title: 'Introdução a Modelagem e Simulação de Sistemas com Aplicações em Arena',
     author: 'Paulo José de Freitas Filho',
     category: 'Simulação',
@@ -520,9 +521,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-26.jpg']
-},
+  },
 {
-    id: '27',
+    id: 27,
     title: 'Descobrindo a Estatística Usando o SPSS',
     author: 'Ardy Fleld',
     category: 'Estatística',
@@ -540,9 +541,9 @@ const books = [{
     sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-27.jpg']
-},
+  },
 {
-    id: '28',
+    id: 28,
     title: 'Cálculo - Vol. 2',
     author: ' Mustafa A. Munem; David J. Foulis ',
     category: 'Cálculo',
@@ -560,9 +561,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-28.jpg']
-},
+  },
 {
-    id: '29',
+    id: 29,
     title: 'Um Curso de Cálculo - Vol. 3: Volume 3',
     author: 'Hamilton Luiz Guidorizzi',
     category: 'Cálculo',
@@ -580,9 +581,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-29.jpg']
-},
+  },
 {
-    id: '30',
+    id: 30,
     title: 'Um Curso de Cálculo - Vol. 2: Volume 2',
     author: 'Hamilton Luiz Guidorizzi',
     category: 'Cálculo',
@@ -600,9 +601,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-30.jpg']
-},
+  },
 {
-    id: '31',
+    id: 31,
     title: 'Mecânica dos Fluidos',
     author: 'Franco Brunetti',
     category: 'Mecânica dos Fluidos',
@@ -620,9 +621,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-31.jpg']
-},
+  },
 {
-    id: '32',
+    id: 32,
     title: 'Planejamento, Programação E Controle Da Produção MRP II/ERP: Conceitos, Uso E Implantação: MRP II/ERP - Conceitos, uso e Implantação, Base Para SAP, ... e Outros Softwares Integrados de Gestão',
     author: 'Henrique Luiz Corrêa et al.',
     category: 'Planejamento e Controle da Produção (PCP)',
@@ -640,9 +641,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-32.jpg']
-},
+  },
 {
-    id: '33',
+    id: 33,
     title: 'Geração de Valor',
     author: 'Flávio Augusto Da Silva',
     category: 'Negócios e Gestão',
@@ -660,9 +661,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-33.jpg']
-},
+  },
 {
-    id: '34',
+    id: 34,
     title: 'Logística Ambiental de Resíduos Sólidos',
     author: 'Daniela Bacchi Bartholomeu; José Vicente Caixeta Filho',
     category: 'Engenharia Ambiental',
@@ -680,9 +681,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-34.jpg']
-},
+  },
 {
-    id: '35',
+    id: 35,
     title: 'Industrial Maintenance',
     author: 'Michael E. Brumbach; Jeffrey A. Clade',
     category: 'Manutenção',
@@ -700,9 +701,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-35.jpg']
-},
+  },
 {
-    id: '36',
+    id: 36,
     title: 'Curso de Estatística',
     author: 'Jairo Simon da Fonseca; Gilberto de Andrade Martins',
     category: 'Estatística',
@@ -720,9 +721,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-36.jpg']
-},
+  },
 {
-    id: '37',
+    id: 37,
     title: 'Algoritmos Programação para Iniciantes',
     author: 'Gilvan Vilarim',
     category: 'Programação',
@@ -740,9 +741,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-37.jpg']
-},
+  },
 {
-    id: '38',
+    id: 38,
     title: 'Roadmapping: uma abordagem estratégica para o gerenciamento da inovação em produtos, serviços e tecnologias',
     author: 'Maicon Gouvêa de Oliveira et al.',
     category: 'Negócios e Gestão',
@@ -760,9 +761,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-38.jpg']
-},
+  },
 {
-    id: '39',
+    id: 39,
     title: 'Estatística usando Excel',
     author: 'Juan Carlos Lapponi',
     category: 'Estatística',
@@ -780,9 +781,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-39.jpg']
-},
+  },
 {
-    id: '40',
+    id: 40,
     title: 'Física - volume 3',
     author: 'David Halliday; Robert Resnick; Kenneth S. Krane',
     category: 'Física',
@@ -800,9 +801,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-40.jpg']
-},
+  },
 {
-    id: '41',
+    id: 41,
     title: 'Confiabilidade e Manutenção Industrial',
     author: 'Flávio Sanson Fogliatto; José Luis Duarte Ribeiro',
     category: 'Manutenção',
@@ -820,9 +821,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-41.jpg']
-},
+  },
 {
-    id: '42',
+    id: 42,
     title: 'Economia, Teoria e Política',
     author: 'Francisco Mochón',
     category: 'Negócios e Gestão',
@@ -840,9 +841,9 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-42.jpg']
-},
+  },
 {
-    id: '43',
+    id: 43,
     title: 'Cálculo A: Funções, Limite, Derivação e Integração',
     author: 'Diva Marília Flemming; Mirian Buss Gonçalves',
     category: 'Cálculo',
@@ -860,7 +861,7 @@ const books = [{
     sold: false,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-43.jpg']
-},
+  },
 ];
 
 // ============================================
@@ -868,7 +869,7 @@ const books = [{
 // ============================================
 let currentCategory = 'all';
 let currentPage = 1;
-const ITEMS_PER_PAGE = 8;
+const ITEMS_PER_PAGE = 12;
 
 // ============================================
 // FUNÇÕES AUXILIARES
