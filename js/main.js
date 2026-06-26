@@ -226,7 +226,7 @@ const books = [
     id: 12,
     title: 'Logística reversa e sustentabilidade',
     author: 'André Luiz Pereira et at.',
-    category: 'Logística',
+    category: 'Engenharia Ambiental',
     price: 20,
     originalPrice: 108,
     discount: 81,
@@ -466,7 +466,7 @@ const books = [
     id: 24,
     title: 'Manufatura Enxuta Como Estratégia De Produção: A Chave Para A Produtividade Industrial',
     author: 'Dalvio Ferrari Tubino',
-    category: 'Manufatura Enxuta (Lean)',
+    category: 'Gestão da Produção',
     price: 50,
     originalPrice: 233,
     discount: 78,
@@ -864,6 +864,26 @@ const books = [
   },
 ];
 
+const categoryConfig = {
+    'planejamento e controle da produção (pcp)': { emoji: '📊', name: 'Planejamento e Controle da Produção (PCP)' },
+    'desenvolvimento de produtos': { emoji: '🛠️', name: 'Desenvolvimento de Produtos' },
+    'gerenciamento de projetos': { emoji: '📈', name: 'Gerenciamento de Projetos' },
+    'negócios e gestão': { emoji: '💼', name: 'Negócios e Gestão' },
+    'gestão da qualidade': { emoji: '✅', name: 'Gestão da Qualidade' },
+    'gestão da produção': { emoji: '🏭', name: 'Gestão da Produção' },
+    'simulação': { emoji: '🖥️', name: 'Simulação' },
+    'engenharia ambiental': { emoji: '🌱', name: 'Engenharia Ambiental' },
+    'pesquisa operacional': { emoji: '📐', name: 'Pesquisa Operacional' },
+    'cálculo numérico': { emoji: '🔢', name: 'Cálculo Numérico' },
+    'inglês / toefl': { emoji: '🇺🇸', name: 'Inglês / TOEFL' },
+    'manutenção': { emoji: '🔧', name: 'Manutenção' },
+    'ergonomia': { emoji: '🪑', name: 'Ergonomia' },
+    'estatística': { emoji: '📈', name: 'Estatística' },   // emoji pode ser igual ao de projetos, sem problema
+    'cálculo': { emoji: '∫', name: 'Cálculo' },
+    'mecânica dos fluidos': { emoji: '💧', name: 'Mecânica dos Fluidos' },
+    'programação': { emoji: '💻', name: 'Programação' },
+    'física': { emoji: '⚛️', name: 'Física' },
+};
 // ============================================
 // VARIÁVEIS GLOBAIS
 // ============================================
@@ -963,6 +983,31 @@ function renderBooks() {
     if (pageInfo) pageInfo.textContent = `Página ${currentPage} de ${totalPages || 1}`;
     if (prevBtn) prevBtn.disabled = currentPage <= 1;
     if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+}
+
+function generateCategoryButtons() {
+    const container = document.getElementById('categoriesContainer');
+    if (!container) return;
+
+    // Usa as chaves do objeto de configuração (já são suas categorias exatas)
+    const categoriesList = Object.keys(categoryConfig);
+
+    // Botão "Todos"
+    const btnAll = document.createElement('button');
+    btnAll.className = 'category-btn active';
+    btnAll.dataset.filter = 'all';
+    btnAll.textContent = '📚 Todos';
+    container.appendChild(btnAll);
+
+    // Gera um botão para cada categoria existente no config
+    categoriesList.forEach(catKey => {
+        const config = categoryConfig[catKey];
+        const btn = document.createElement('button');
+        btn.className = 'category-btn';
+        btn.dataset.filter = config.name;          // o filtro será a própria chave (minúscula)
+        btn.textContent = `${config.emoji} ${config.name}`;
+        container.appendChild(btn);
+    });
 }
 
 // ============================================
@@ -1207,6 +1252,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isDetailPage) {
         loadBookDetail();
     } else {
+        generateCategoryButtons();  // ← nova linha
         renderBooks();
         setupCategoryButtons();
         setupPagination();
