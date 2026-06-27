@@ -758,7 +758,7 @@ const books = [
     year: 2012,
     location: 'Rio de Janeiro',
     description: 'Este livro apresenta em cinco capítulos os principais conhecimentos para a aplicação da abordagem do roadmapping na organização tendo em vista a obtenção de excelentes resultados. O primeiro capítulo apresenta a abordagem, juntamente com os seus dois principais componentes: o roadmap e o processo de desenvolvimento. O segundo capítulo apresenta em detalhes os principais elementos que constituem os processos de roadmapping e traz exemplos clássicos de organizações que foram pioneiras no uso da abordagem. O terceiro capítulo apresenta o roadmapping para a definição de estratégias de inovação, o seu processo de desenvolvimento e exemplos relacionados. O quarto capítulo apresenta o roadmapping para planejamento de produtos e tecnologias, o seu processo de desenvolvimento e exemplos relacionados. O quinto capitulo apresenta ferramentas e técnicas adicionais, capazes de enriquecer os resultados do roadmapping e superar eventuais limitações encontradas durante o desenvolvimento do roadmap.',
-    sold: false,
+    sold: true,
     whatsapp: '5599988560842', // Adicionado para manter consistência com o modelo, mas vazio
     images: ['images/id-38.jpg']
   },
